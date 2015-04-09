@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist wbraganca/yii2-fancytree-widget "*"
+php composer.phar require --prefer-dist acyuta/yii2-fancytree-widget "*"
 ```
 
 or add
 
 ```
-"wbraganca/yii2-fancytree-widget": "*"
+"acyuta/yii2-fancytree-widget": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -42,6 +42,7 @@ $data = [
 echo \wbraganca\fancytree\FancytreeWidget::widget([
 	'options' =>[
 		'source' => $data,
+		'active' => 1,
 		'extensions' => ['dnd'],
 		'dnd' => [
 			'preventVoidMoves' => true,
