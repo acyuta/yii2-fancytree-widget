@@ -40,9 +40,9 @@ $data = [
 ];
 
 echo \wbraganca\fancytree\FancytreeWidget::widget([
+	'focusOnKey' => 1,
 	'options' =>[
 		'source' => $data,
-		'active' => 1,
 		'extensions' => ['dnd'],
 		'dnd' => [
 			'preventVoidMoves' => true,
